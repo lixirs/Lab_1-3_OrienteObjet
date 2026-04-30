@@ -10,7 +10,7 @@ void exercice1()
 	int inputs[4];
 	for (int i = 0; i < 4; i++)
 	{
-		std::cout << "Enter a number: ";
+		std::cout << std::format("Enter a number ({}): ", i + 1);
 		std::cin >> inputs[i];
 	}
 	int sum = 0;
@@ -241,18 +241,18 @@ void exercice10()
 }
 int main(int argc, char** argv)
 {
-	//exercice1();
-	//exercice2();
+	exercice1();
+	exercice2();
 	if (argc == 2)
 	{
-		//exercice3(argv[1]);
+		exercice3(argv[1]);
 	}
-	//exercice4();
-	//exercice5();
-	//exercice6();
-	//exercice7();
-	//exercice8();
-	//exercice9();
-	//exercice10();
+	exercice4();
+	exercice5();
+	exercice6();
+	exercice7();
+	exercice8();
+	exercice9();
+	exercice10();
 	return 0;
 }
